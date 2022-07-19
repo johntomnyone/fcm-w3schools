@@ -1,0 +1,58 @@
+.covid19-container {
+  display: flex;
+  background-color: var(--acolor);
+  color: var(--pcolor);
+}
+
+.covid19-container .covid19-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.covid19-container .covid19-wrapper .trans span {
+  transition: all 3s ease-in-out;
+  animation: alternateOpacity 3s infinite;
+}
+
+@keyframes alternateOpacity {
+  0% {
+      color: var(--whitecolor);
+  }
+  50% {
+    color: var(--logocolor);
+  }
+  100% {
+      color: var(--bgcolor);
+  }
+}
+
+.covid19-container .covid19-wrapper .covid19-header {
+  margin-bottom: 10px;
+}
+
+.covid19-container .covid19-wrapper .covid19-data ul {
+  display: flex;
+}
+
+.covid19-container .covid19-wrapper .covid19-data ul li {
+  list-style: none;
+  padding: 0 10px;
+  font-weight: 500;
+}
+.covid19-container .covid19-wrapper .covid19-data ul li span {
+  color: var(--whitecolor);
+}
+
+@media screen and (max-width: 810px) {
+  .covid19-container .covid19-wrapper {
+    padding: 10px;
+  }
+
+  .covid19-container .covid19-wrapper .covid19-data ul li {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

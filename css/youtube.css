@@ -1,0 +1,109 @@
+.youtube-container {
+  padding: 0 50px;
+}
+
+.youtube-container .youtube-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+
+.youtube-container .youtube-wrapper div {
+  margin: 0 50px;
+}
+
+.youtube-container .youtube-wrapper .little-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 2;
+  border: 1px solid var(--acolor);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px var(--acolor);
+}
+
+.youtube-container .youtube-wrapper .little-aside div:not(:first-child) {
+  margin: 5px 0;
+  background-color: var(--bgcolor);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.youtube-container .youtube-wrapper .ydownloader-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 10;
+}
+
+.youtube-container .youtube-wrapper .ydownloader-container div {
+  margin: 5px 0;
+}
+
+.youtube-container .youtube-wrapper .ydownloader-container .ydownload-head {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.youtube-container .youtube-wrapper .ydownloader-container .ydownload-head i {
+  color: var(--pcolor);
+}
+
+.youtube-container .youtube-wrapper .ydownloader-container .ydownload-input {
+  display: flex;
+}
+.youtube-container .youtube-wrapper .ydownloader-container .ydownload-input button {
+  display: flex;
+  align-items: center;
+}
+
+.youtube-container .youtube-wrapper .ydownloader-container .ydownload-input button i {
+  margin-right: 5px;
+}
+.youtube-container .youtube-wrapper .ydownloader-container .ydownload-input input[type="url"] {
+  display: flex;
+  width: 100%;
+  padding: 5px 5px;
+  margin: 0 5px;
+  border: none;
+  outline: 2px solid var(--pcolor);
+  border-radius: 4px;
+}
+
+.youtube-container .youtube-wrapper .ydownloader-container .disclaimer {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 810px) {
+  .youtube-container {
+    padding: 0;
+  }
+
+  .youtube-container .youtube-wrapper {
+    flex-wrap: wrap-reverse;
+    padding: 20px 0px;
+  }
+
+  .youtube-container .youtube-wrapper .ydownloader-container .ydownload-head {
+    margin-top: 40px;
+  }
+
+  .youtube-container .youtube-wrapper .little-aside {
+    display: flex;
+    flex-flow: row wrap;
+    border: none;
+    box-shadow: none;
+  }
+
+  .youtube-container .youtube-wrapper .little-aside div:not(:first-child) {
+    margin: 5px;
+  }
+
+  .youtube-container .youtube-wrapper .little-aside div:first-child {
+    display: none;
+  }
+}
+/* /RESPONSIVENESS */
